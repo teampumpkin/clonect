@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clonect Solutions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
+        user-scalable=no">
+    <!-- Latest compiled and minified CSS -->
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css'>
+    <link rel="icon" href="img/logo.png" width="32px" height="32px">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='css/style.css' type='text/css'>
+    <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("myBtn").style.display = "block";
+      } else {
+          document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+  </head>
+  <body class="roboto">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+    <div class="container-fluid" class="fw-300">
+      <div class="row nav1">
+          <nav class="navbar">
+            <div class="container">
+              <ul class="menu nav navbar-nav navbar-right">
+                <li class="menu-item hidden-xs">
+                  <span id="numSpan"><a href="tel:+917338455118" class="highLink"><i class="fa fa-phone" aria-hidden="true"></i> +91 73384 55118 </a> /
+                    <a href="tel:+918040912427" class="highLink">+91 8040912427 </a></span>
+                </li>
+                <li class="menu-item hidden-xs">
+                  <a href="mailto:info@clonect.com" class="highLink"><i class="fa fa-envelope" aria-hidden="true"></i> info@clonect.com</a>
+                </li>
+                <li class="menu-item visible-xs">
+                  <center>
+                    <span id="numSpan"><a href="tel:+917338455118" class="highLink"><i class="fa fa-phone" aria-hidden="true"></i> +91 73384 55118 </a> /
+                      <a href="tel:+918040912427" class="highLink">+91 8040912427 </a></span>
+                    </center>
+                </li>
+                <li class="menu-item visible-xs" style="margin-top:10px;">
+                  <center>
+                    <a href="mailto:info@clonect.com" class="highLink">
+                      <i class="fa fa-envelope" aria-hidden="true"></i> info@clonect.com
+                    </a>
+                  </center>
+                </li>
+              </ul>
+            </div><!-- /.container-fluid -->
+          </nav>
+      </div>
+      <div class="row roboto">
+        <nav class="navbar navbar-inverse navbar-static-top fw-400" role="navigation" id="navBar2">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed close-btn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="img/logo.png" style="margin-top:-10px;" id="navLogo">
+                  </a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li onclick="$( '.close-btn' ).trigger( 'click' );"><a href="#about" class="tabLinks" id="linkAbout">ABOUT US</a></li>
+                    <li onclick="$( '.close-btn' ).trigger( 'click' );"><a href="#gststar" class="tabLinks" id="linkGst">GSTSTAR</a></li>
+                    <li onclick="$( '.close-btn' ).trigger( 'click' );"><a href="#ricago" class="tabLinks" id="linkRicago">RICAGO</a></li>
+                    <li onclick="$( '.close-btn' ).trigger( 'click' );"><a href="#contact" class="tabLinks" id="linkContact">CONTACT US</a></li>
+                  </ul>
+              </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="row">
+          <img src="img/banner3.jpg" width="100%" alt="banner">
+      </div>
+
+      <div class="row colorRow">
+        <div class="container">
+          <div class="col-sm-10 col-sm-offset-1 col-xs-12 imgDiv1 text-center">
+            <a target="_blank" href="http://www.clonect.com/"> <img src="img/ricago.png" width="300px" height="130px" alt="ricago" class="projectImg1"> </a>
+            <a target="_blank" href="http://www.gststar.com/"> <img src="img/gststar.png" width="300px" height="130px" alt="gststar" class="projectImg1"> </a>
+          </div>
+          <h2 class="mainHead text-center" id="about"><strong>About Us</strong></h2>
+          <p class="text-center">Clonect is a dynamic next generation company focusing on Enterprise Governance, Risk Management and Compliance Management
+            (GRC) solutions.</p>
+          <p class="text-center">In a globalized business environment, organizations need to comply with complex and dynamic regulatory requirements as
+            they grow and expand into different geographies and industry verticals. With the right mix of rich domain & technology expertise, and insights
+            from both CFO & CIO worlds, Clonect helps organizations to leverage technology optimally and innovatively, addressing GRC as well as other
+            finance IT solution needs.</p>
+        </div><!-- container-->
+      </div><!--row-->
+
+      <div class="row uncolorRow">
+        <div class="container">
+          <div class="col-sm-6 col-xs-12">
+            <div class="row" id="ricago">
+              <div class="col-sm-6 col-sm-offset-3 col-xs-12 imgDiv">
+                <img src="img/ricago.png" width="100%" alt="ricago" class="projectImg">
+              </div>
+              <div class="col-sm-12 col-xs-12">
+                <p class="text-justify fixedHt ricagoPara">ricago is a dynamic platform focusing on niche products and solutions in Enterprise Governance,
+                  Risk Management and Compliance Management (GRC). With a strong and growing portfolio of products catered to the Corporate Governance and
+                  Compliance Management needs of organizations, ricago addresses and comprehensively brings down the related risks, and thus enabling the
+                  offices of the Directors, CEOs, CXOs and Function/Department Heads.</p>
+                  <center><a class="btn btn-lg ricagoBtn" target="_blank" href="http://www.clonect.com/">Explore ricago</a></center>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div class="row" id="gststar">
+              <div class="col-sm-6 col-sm-offset-3 col-xs-12 imgDiv">
+                <img src="img/gststar.png" width="100%" alt="gststar" class="projectImg">
+              </div>
+              <div class="col-sm-12 col-xs-12">
+                <p class="text-justify fixedHt">GSTSTAR, the new age GST Solution, comprehensively addresses the business needs of Enterprises, SMEs
+                  and Professionals under the new GST regime! GSTSTAR cumulatively brings together technology, knowledge and service offerings to provide
+                  a complete and relevant solution.</p>
+                  <center><a class="btn btn-lg ricagoBtn" target="_blank" href="http://www.gststar.com/">Explore GSTSTAR</a></center>
+              </div>
+            </div>
+          </div>
+        </div><!--container-->
+      </div><!--row-->
+      <div class="row colorRow">
+        <div class="container">
+          <h2 class="mainHead text-center"><strong>Clonect - The "Cloud Connect"</strong></h2>
+          <div class="col-sm-6 col-xs-12">
+            <center><img src="img/cloud.png" width="85%" alt="cloud connect"></center>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <p class="text-justify">Cloud, a simple body of very fine water droplets or ice particles suspended in the atmosphere, has
+              captured the imagination of humans just as the blue sky. It is a part of folklores, mythological stories, literatures and
+              even nursery school rhymes. Clouds are looked upon as a platform connecting to divinity ... Gods appear from the clouds!!!</p>
+            <p class="text-justify">In physics, term "cloud" is used to describe a large agglomeration of objects that visually appears from
+              a distance as a cloud, whose details are not inspected further in a given context. A large number of points in a coordinate
+              system is described as a cloud in Mathematics. Astronomy calls a cloud of gas and particulate matter in space as a nebula
+              (Latin word for mist or cloud). Indeterminate position of electrons around an atomic kernel is also a cloud ... and so is
+              Internet.</p>
+            <p class="text-justify">So... for any given subject clouds could mean something else. But they represent the same key
+              characteristics of simplicity, abstraction and democratization. We look at group of systems … group of people … group
+              of organizations and many more such groups having an affinity to each other, as clouds. We believe, connecting such
+              clouds unleashes the collective value proposition… It epitomes collaboration and power of communities.</p>
+          </div>
+        </div><!--container-->
+      </div><!--row-->
+
+      <div class="row uncolorRow">
+        <div class="container">
+          <div class="col-sm-6 col-xs-12">
+            <h2 class="mainHead text-center" id="contact"><strong>Be a part of our team</strong></h2>
+            <br><br><p class="text-justify">Come and join a team of experienced members from reputed technology firms, with a right mix of
+              rich domain & technology expertise, who have joined hands to form a company providing the dynamic next generation
+              products, platforms & services. We are looking for experienced technology/ domain /product professionals to augment
+              the current team. Please send your profiles to <a href="mailto:careers@clonect.com">careers@clonect.com.</a></p>
+          </div>
+          <div class="col-sm-5 col-sm-offset-1 col-xs-12">
+            <h2 class="mainHead text-center" id="formHead"><strong>Get in touch with us!</strong></h2>
+              <form>
+                <input type="text"  class="form-control" placeholder="Name" required><br>
+                <input type="email"  class="form-control" placeholder="Email" required><br>
+                <input type="tel"  class="form-control" placeholder="Phone Number" required><br>
+                <input type="text"  class="form-control" placeholder="Company Name"><br>
+                <select  class="form-control">
+                  <option selected disabled value="">We are..</option>
+                  <option value="CA & Tax Professionals">Enterprise</option>
+                  <option value="CA Firms">Taxation Professional</option>
+                  <option value="Consulting Firms">Consulting Firm</option>
+                  <option value="ERP Vendors">Software Vendor</option>
+                </select>
+                <center><button class="btn btn-lg ricagoBtn">Submit</button></center>
+              </form>
+          </div>
+        </div><!--container-->
+      </div><!--row-->
+
+      <footer class="hidden-xs">
+        <div class="row footRow">
+          <div class="container">
+            <div class="col-sm-4 col-xs-12">
+              <img src="img/logoFoot.png" alt="Logo" id="footLogo">
+            </div>
+            <div class="col-sm-4 col-xs-12">
+              <h3>Contact Us:</h3>
+              <p>Clonect Solutions Private Limited. <br>#75, 3rd Cross, 17th
+                Main, 2nd Block, <br> Koramangala, Bengaluru - 560034<br>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i> : sales@clonect.com<br>
+                <i class="fa fa-phone" aria-hidden="true"></i> : +91 8040912427</p>
+            </div>
+            <div class="col-sm-3 col-sm-offset-1 col-xs-12">
+              <h3>Follow Us:</h3>
+              <ul class="socilIcons list-inline">
+                <li class="socilIconsList list-unstyled">
+                  <a href="https://www.facebook.com/clonectsolutions" target="_blank">
+                    <i class="fa fa-facebook socialIcon"></i>
+                  </a>
+                </li>
+                <li class="socilIconsList list-unstyled">
+                  <a href="https://twitter.com/clonect_ricago" target="_blank">
+                    <i class="fa fa-twitter socialIcon"></i>
+                  </a>
+                </li>
+              	<!-- <li class="socilIconsList list-unstyled">
+                  <a href="" target="_blank">
+                    <i class="fa fa-google-plus socialIcon"></i>
+                  </a>
+                </li> -->
+                <li class="socilIconsList list-unstyled">
+                  <a href="https://www.linkedin.com/company/clonect-solutions-pvt-ltd" target="_blank">
+                    <i class="fa fa-linkedin socialIcon"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row lastRow">
+          <center>Copyright &copy; 2017 Clonect Solutions Private Limited. All Rights Reserved.</center>
+        </div>
+      </footer>
+
+      <footer class="visible-xs">
+        <center>
+          <div class="row footRow">
+            <div class="container">
+              <div class="col-sm-4 col-xs-12">
+                <img src="img/logoFoot.png" width="70%" alt="Logo">
+              </div>
+              <div class="col-sm-4 col-xs-12">
+                <h3 id="contactFoot">Contact Us:</h3>
+                <p>Clonect Solutions Private Limited. <br>#75, 3rd Cross, 17th
+                  Main, 2nd Block, <br> Koramangala, Bengaluru - 560034<br>
+                  <i class="fa fa-envelope-o" aria-hidden="true"></i> : sales@clonect.com<br>
+                  <i class="fa fa-phone" aria-hidden="true"></i> : +91 8040912427</p>
+              </div>
+              <div class="col-sm-3 col-sm-offset-1 col-xs-12">
+                <h3>Follow Us:</h3>
+                <ul class="socilIcons list-inline">
+                  <li class="socilIconsList list-unstyled">
+                    <a href="https://www.facebook.com/clonectsolutions" target="_blank">
+                      <i class="fa fa-facebook socialIcon"></i>
+                    </a>
+                  </li>
+                  <li class="socilIconsList list-unstyled">
+                    <a href="https://twitter.com/clonect_ricago" target="_blank">
+                      <i class="fa fa-twitter socialIcon"></i>
+                    </a>
+                  </li>
+                	<!-- <li class="socilIconsList list-unstyled">
+                    <a href="" target="_blank">
+                      <i class="fa fa-google-plus socialIcon"></i>
+                    </a>
+                  </li> -->
+                  <li class="socilIconsList list-unstyled">
+                    <a href="https://www.linkedin.com/company/clonect-solutions-pvt-ltd" target="_blank">
+                      <i class="fa fa-linkedin socialIcon"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </center>
+        <div class="row lastRow">
+          <center id="mobCopyRight">Copyright &copy; 2017 Clonect Solutions Private Limited. All Rights Reserved.</center>
+        </div>
+      </footer>
+
+    </div>
+  </body>
+  <script>
+    $('.nav li a').click(function(){
+      $(this).parent().addClass('active').siblings().removeClass('active');
+    })
+    $('.nav li a').mouseenter(function(){
+      $(this).parent().addClass('hover').siblings().removeClass('hover');
+    })
+    $('.nav li a').mouseleave(function(){
+      $(this).parent().removeClass('hover');
+    })
+  </script>
+</html>

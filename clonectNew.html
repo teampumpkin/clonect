@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clonect Solutions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
+        user-scalable=no">
+    <!-- Latest compiled and minified CSS -->
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css'>
+    <link rel="icon" href="logo.png" width="32px" height="32px">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='style.css' type='text/css'>
+    <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("myBtn").style.display = "block";
+      } else {
+          document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+    <div class="container-fluid">
+      <aside class="off-canvas-menu">
+    		<span class="close-btn"><i class="material-icons clear"></i></span>
+    		<!-- Main navigation -->
+    		<!-- Visible only on mobile -->
+    		<nav class="vertical-navigation">
+    			<ul class="menu">
+    				<li class="menu-item current-menu-item" onclick="$( '.close-btn' ).trigger( 'click' );">
+    					<a href="index.html">
+                Home
+                <span class="arrow">
+                  <i class="material-icons keyboard_arrow_down"></i>
+                </span>
+              </a>
+    				</li>
+    				<li class="menu-item" onclick="$( '.close-btn' ).trigger( 'click' );">
+    					<a href="company">About Us
+                <span class="arrow">
+                  <i class="material-icons keyboard_arrow_down"></i>
+                </span>
+              </a>
+    				</li>
+    				<li class="menu-item" onclick="$( '.close-btn' ).trigger( 'click' );">
+    					<a href="product">Offerings
+                <span class="arrow">
+                  <i class="material-icons keyboard_arrow_down"></i>
+                </span>
+              </a>
+    				</li>
+    				<li class="menu-item menu-item-has-children">
+    					<a href="#">Resources
+                <span class="arrow">
+                  <i class="material-icons keyboard_arrow_down"></i>
+                </span>
+              </a>
+    					<ul class="sub-menu">
+    						<li class="menu-item" onclick="$( '.close-btn' ).trigger( 'click' );">
+    							<a href="http://www.gststar.com/blog/" target="_blank">Blogs
+    							<span class="arrow">
+    							<i class="material-icons keyboard_arrow_down"></i>
+    							</span>
+    							</a>
+    						</li>
+    						<li class="menu-item" onclick="$( '.close-btn' ).trigger( 'click' );">
+    							<a href="downloads">Downloads
+                    <span class="arrow">
+                      <i class="material-icons keyboard_arrow_down"></i>
+                    </span>
+                  </a>
+    						</li>
+    						<li class="menu-item" onclick="$( '.close-btn' ).trigger( 'click' );">
+    							<a href="legislation">Legislation
+                    <span class="arrow">
+                      <i class="material-icons keyboard_arrow_down"></i>
+                    </span>
+                  </a>
+    						</li>
+    						<li class="menu-item" onclick="$( '.close-btn' ).trigger( 'click' );">
+    							<a href="pressCorner">Press Corner
+                    <span class="arrow">
+                      <i class="material-icons keyboard_arrow_down"></i>
+                    </span>
+                  </a>
+    						</li>
+    					</ul>
+    				</li>
+    				<li class="menu-item" onclick="$( '.close-btn' ).trigger( 'click' );">
+    					<a href="contactUs">Contact Us
+                <span class="arrow">
+                  <i class="material-icons keyboard_arrow_down"></i>
+                </span>
+              </a>
+    				</li>
+    				<li class="menu-item" onclick="$( '.close-btn' ).trigger( 'click' );">
+    					<a href="faq">FAQs
+                <span class="arrow">
+                  <i class="material-icons keyboard_arrow_down"></i>
+                </span>
+              </a>
+    				</li>
+    			</ul>
+    		</nav>
+    		<!-- Main navigation END -->
+    	</aside>
+    	<!-- Offcanvas Sidebar Mobile Menu END -->
+    	<!-- Header -->
+    	<header class="site-header navbar-sticky">
+    		<div class="topbar topbar-gray text-dark">
+    			<div class="container">
+    				<div class="inner">
+    					<div class="column">
+    					</div>
+    					<div class="column text-right">
+    						<nav class="topbar-menu">
+    							<ul class="menu">
+    								<li class="menu-item">
+    									<span><a href="tel:+917338455118" style="text-decoration:none; color:#4c4c4c;"><i class="material-icons call"></i>+91 73384 55118 </a> /
+    <a href="tel:+918040912427" style="text-decoration:none; color:#4c4c4c;">+91 8040912427 </a></span>
+    								</li>
+    								<li class="menu-item">
+    									<a href="mailto:info@gststar.com"><i class="material-icons mail"></i>info@gststar.com</a>
+    								</li>
+    								<li class="menu-item">
+    									<a target="_blank" href="https://app.gststar.com/gstweb/" id="gtm-login"><i class="material-icons person_outline"></i>Login</a>
+    								</li>
+    							</ul>
+    						</nav>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="navbar navbar-regular menu-right">
+    			<div class="container">
+    				<div class="inner">
+    					<!-- Main Logo Column -->
+    					<div class="column">
+    						<a class="site-logo" href="index.html">
+                  <img alt="logo" class="custom-logo"  src="img/gstLogo.png">
+                </a>
+    					</div>
+    					<!-- Main Logo Column END -->
+    					<div class="column">
+    						<!-- Main navigation -->
+    						<!-- Visible only on desktop -->
+    						<nav class="main-navigation">
+    							<ul class="menu">
+    								<li class="menu-item current-menu-item">
+    									<a href="home">Home</a>
+    								</li>
+
+    								<li class="menu-item has-mega-menu">
+    									<a href="product">Offerings</a>
+    								</li>
+    								<li class="menu-item menu-item-has-children">
+    									<a style="cursor: default;" href="#">Resources</a>
+    									<ul class="sub-menu">
+    										<li class="menu-item">
+                          <a href="http://www.gststar.com/blog/" target="_blank">Blogs</a>
+                        </li>
+    										<li class="menu-item">
+    											<a href="downloads">Downloads</a>
+    										</li>
+    										<li class="menu-item">
+    											<a href="legislation">Legislation</a>
+    										</li>
+    										<li class="menu-item">
+    											<a href="pressCorner">Press Corner</a>
+    										</li>
+    									</ul>
+    								</li>
+    								<li class="menu-item">
+    									<a href="company">About Us</a>
+    								</li>
+    								<li class="menu-item">
+    									<a href="contactUs">Contact Us</a>
+    								</li>
+    								<li class="menu-item">
+    									<a href="faq">FAQs</a>
+    								</li>
+    							</ul>
+    						</nav>
+    						<!-- Main navigation END -->
+    						<!-- Header Toolbar, search, offcanvas toggle etc -->
+    						<div class="toolbar">
+    							<!-- Topbar Mobile View Toggle -->
+    							<!-- Only Mobile view visible -->
+    							<a class="topbar-btn tool" href="#">
+                    <i class="material-icons more_horiz"></i>
+                  </a>
+    							<!-- Mobile View Navigation Toggle -->
+    							<!-- Only Mobile view visible -->
+    							<a class="menu-btn tool" data-toggle="offcanvas" href="#"><i class="material-icons menu"></i></a>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</header>
+      <div class="row">
+          <img src="banner.jpg" width="100%" alt="banner">
+      </div>
+
+      <div class="row colorRow">
+        <div class="container">
+          <h2 class="mainHead text-center" id="about"><strong>About us</strong></h2>
+          <p class="text-center">Clonect is a dynamic next generation company focusing on enterprise Governance, Risk Management and
+            Compliance Management (GRC) solutions.</p>
+          <p class="text-center">In a globalized business environment, organizations need to comply with a complex and dynamic regulatory requirements as
+            they grow and expand into different geographies and industry verticals.With a right mix of rich domain & technology expertise,
+            and insights from both CFO & CIO worlds, Clonect helps organizations to leverage technology optimally and innovatively,
+            addressing GRC as well as other finance IT solution needs.</p>
+        </div><!-- container-->
+      </div><!--row-->
+
+      <div class="row uncolorRow">
+        <div class="container">
+          <div class="col-sm-6 col-xs-12">
+            <div class="row" id="gststar">
+              <div class="col-sm-6 col-sm-offset-3 col-xs-12">
+                <img src="gststar.png" width="100%" alt="gststar">
+              </div>
+              <div class="col-sm-12 col-xs-12">
+                <p class="text-justify fixedHt">GSTSTAR, the new age solution provider, offers products and services on GST compliance and helps
+                  businesses in understanding GST better. This Bengaluru based venture,  founded by Infosys veterans Shailesh Agrawal and
+                  Balaji G S Rao, provides GST solutions to Enterprises, SMEs and Tax Professionals.</p>
+                  <center><a class="btn btn-lg ricagoBtn" target="_blank" href="http://www.gststar.com/">Explore GSTSTAR</a></center>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div class="row" id="ricago">
+              <div class="col-sm-6 col-sm-offset-3 col-xs-12">
+                <img src="ricago.png" width="100%" alt="ricago" class="right">
+              </div>
+              <div class="col-sm-12 col-xs-12">
+                <p class="text-justify fixedHt ricagoPara">ricago is a dynamic platform focusing on niche products and solutions in the area of enterprise
+                  Governance, Risk Management and Compliance Management (GRC). With a right mix of rich domain and technology expertise
+                  and insights from both CFO and CIO worlds, Clonect helps organizations to leverage technology optimally and
+                  innovatively, addressing enterprise finance and legal GRC, compliance requirements and related IT solution needs –
+                  through the ricago platform.</p>
+                  <center><a class="btn btn-lg ricagoBtn" target="_blank" href="http://www.clonect.com/">Explore ricago</a></center>
+
+              </div>
+            </div>
+          </div>
+        </div><!--container-->
+      </div><!--row-->
+        <!-- <div class="row uncolorRow">
+          <div class="col-sm-6">
+
+          </div>
+          <div class="col-sm-6">
+
+          </div>
+        </div> -->
+
+      <div class="row colorRow">
+        <div class="container">
+          <h2 class="mainHead text-center"><strong>Clonect - The "Cloud Connect"</strong></h2>
+          <div class="col-sm-6 col-xs-12">
+            <center><img src="cloud.png" width="85%" alt="cloud connect"></center>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <p class="text-justify">Cloud, a simple body of very fine water droplets or ice particles suspended in the atmosphere, has
+              captured the imagination of humans just as the blue sky. It is a part of folklores, mythological stories, literatures and
+              even nursery school rhymes. Clouds are looked upon as a platform connecting to divinity ... Gods appear from the clouds!!!</p>
+            <p class="text-justify">In physics, term "cloud" is used to describe a large agglomeration of objects that visually appears from
+              a distance as a cloud, whose details are not inspected further in a given context. A large number of points in a coordinate
+              system is described as a cloud in Mathematics. Astronomy calls a cloud of gas and particulate matter in space as a nebula
+              (Latin word for mist or cloud). Indeterminate position of electrons around an atomic kernel is also a cloud ... and so is
+              Internet.</p>
+            <p class="text-justify">So... for any given subject clouds could mean something else. But they represent the same key
+              characteristics of simplicity, abstraction and democratization. We look at group of systems … group of people … group
+              of organizations and many more such groups having an affinity to each other, as clouds. We believe, connecting such
+              clouds unleashes the collective value proposition… It epitomes collaboration and power of communities.</p>
+          </div>
+        </div><!--container-->
+      </div><!--row-->
+
+      <div class="row">
+          <img src="user.PNG" width="100%" alt="user, client and sectors">
+      </div>
+
+      <div class="row uncolorRow">
+        <div class="container">
+          <div class="col-sm-6 col-xs-12">
+            <h2 class="mainHead text-center" id="contact"><strong>Clonect stands for and is committed to "Cloud Connect".</strong></h2>
+            <br><br><p class="text-justify">Come and join a team of experienced members from reputed technology firms, with a right mix of
+              rich domain & technology expertise, who have joined hands to form a company providing the dynamic next generation
+              products, platforms & services. We are looking for experienced technology/ domain /product professionals to augment
+              the current team. Please send your profiles to <a href="mailto:career@clonect.com">career@clonect.com.</a></p>
+          </div>
+          <div class="col-sm-5 col-sm-offset-1 col-xs-12">
+            <h2 class="mainHead text-center"><strong>Get in touch with us!</strong></h2>
+              <form>
+                <input type="text"  class="form-control" placeholder="Name" required><br>
+                <input type="email"  class="form-control" placeholder="Email" required><br>
+                <input type="tel"  class="form-control" placeholder="Phone Number" required><br>
+                <input type="text"  class="form-control" placeholder="Company Name"><br>
+                <select  class="form-control">
+                  <option selected disabled value="">We are..</option>
+                  <option value="CA & Tax Professionals">CA & Tax Professionals</option>
+                  <option value="CA Firms">CA Firms</option>
+                  <option value="Consulting Firms">Consulting Firms</option>
+                  <option value="ERP Vendors">ERP Vendors</option>
+                  <option value="Large Enterprises">Large Enterprises</option>
+                  <option value="Accounting Software Vendors">Accounting Software Vendors</option>
+                  <option value="Innovative Freelancers">Innovative Freelancers</option>
+                </select>
+                <center><button class="btn btn-lg ricagoBtn">Submit</button></center>
+              </form>
+          </div>
+        </div><!--container-->
+      </div><!--row-->
+
+      <footer>
+        <div class="row footRow">
+          <div class="container">
+            <div class="col-sm-4 col-xs-12">
+              <img src="logoFoot.png" width="70%" alt="Logo">
+            </div>
+            <div class="col-sm-4 col-xs-12">
+              <h3>CONTACT US</h3>
+              <p>Clonect Solutions Private Limited A : #75, 3rd Cross, 17th
+                Main, 2nd Block, Koramangala, Bengaluru - 560034<br>
+                E : sales@clonect.com</p>
+            </div>
+            <div class="col-sm-3 col-sm-offset-1 col-xs-12">
+              <h3>FOLLOW US:</h3>
+              <ul class="socilIcons list-inline">
+                <li class="socilIconsList list-unstyled"> <a href="https://www.facebook.com/login.php?api_key=127760087237610&skip_api_login=1&display=popup&social_plugin_action=like&social_plugin=like&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fplugin.optin%3F_path%3Dplugin.optin%26app_id%3D127760087237610%26client_id%3D127760087237610%26display%3Dpopup%26secure%3Dtrue%26social_plugin%3Dlike%26return_params%3D%257B%2522href%2522%253A%2522http%253A%252F%252Funbouncepages.com%252Fclonect%252F%2522%252C%2522send%2522%253A%2522false%2522%252C%2522layout%2522%253A%2522button_count%2522%252C%2522width%2522%253A%252283%2522%252C%2522height%2522%253A%2522%2522%252C%2522show_faces%2522%253A%2522false%2522%252C%2522action%2522%253A%2522like%2522%252C%2522colorscheme%2522%253A%2522light%2522%252C%2522font%2522%253Anull%252C%2522%253BappId%2522%253A%2522131761285788%2522%252C%2522ret%2522%253A%2522optin%2522%252C%2522act%2522%253A%2522connect%2522%257D%26login_params%3D%257B%2522social_plugin_action%2522%253A%2522like%2522%257D%26from_login%3D1"> <i class="fa fa-facebook socialIcon"></i> </a> </li>
+                <li class="socilIconsList list-unstyled"> <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Funbouncepages.com%2Fclonect%2F&ref_src=twsrc%5Etfw&text=Clonect%20Solution&tw_p=tweetbutton&url=http%3A%2F%2Funbouncepages.com%2Fclonect%2F"> <i class="fa fa-twitter socialIcon"></i>  </a> </li>
+              	<li class="socilIconsList list-unstyled"> <a href="https://apis.google.com/u/0/se/0/_/+1/fastbutton?usegapi=1&annotation=bubble&size=medium&origin=http%3A%2F%2Funbouncepages.com&url=http%3A%2F%2Funbouncepages.com%2Fclonect%2F&gsrc=3p&ic=1&jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.3t1xUeVe_Z4.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCN4hcAMb3eb3WPJTJu8oC1Cduzc2g#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&id=I0_1498032612030&parent=http%3A%2F%2Funbouncepages.com&pfname=&rpctoken=41610514"> <i class="fa fa-google-plus socialIcon"></i>  </a> </li>
+                <!-- <li class="socilIconsList list-unstyled"> <a href="#"> <i class="fa fa-linkedin socialIcon"></i>  </a> </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row lastRow">
+          <center>Copyright &copy; 2017 Clonect Solutions Private Limited. All Rights Reserved.</center>
+        </div>
+      </footer>
+
+    </div>
+  </body>
+</html>
