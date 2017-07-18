@@ -152,6 +152,7 @@ input{
 .imgDiv1{
   margin-bottom: 50px;
   margin-top: 50px;
+  padding-left: 0px !important;
 }
 .projectImg1{
   box-shadow: 7px 7px 7px lightgray;
@@ -203,6 +204,9 @@ input{
   }
   #mobCopyRight{
     font-size: 10px;
+  }
+  #gstLogo1{
+    margin-top: 20px;
   }
 }
 @media (min-width: 360px) and (max-width: 768px){
