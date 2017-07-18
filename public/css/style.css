@@ -199,8 +199,11 @@ input{
     text-align: center;
   }
   #navLogo {
-    width: 125px;
-    height: 45px;
+    width: 130px;
+    height: 48px;
+  }
+  #navBar2{
+    min-height: 65px !important;
   }
   #mobCopyRight{
     font-size: 10px;
