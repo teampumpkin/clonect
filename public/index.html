@@ -180,8 +180,8 @@
                 <input type="text"  name="name" class="form-control" placeholder="Name" required><br>
                 <input type="email" name="email"  class="form-control" placeholder="Email" required><br>
                 <input type="tel" name="ph"  class="form-control" placeholder="Phone Number" required><br>
-                <input type="text" name="companyType"  class="form-control" placeholder="Company Name"><br>
-                <select  class="form-control">
+                <input type="text" name="companyName"  class="form-control" placeholder="Company Name"><br>
+                <select  class="form-control" name="companyType">
                   <option selected disabled value="">We are..</option>
                   <option value="CA & Tax Professionals">Enterprise</option>
                   <option value="CA Firms">Taxation Professional</option>
@@ -303,7 +303,7 @@
   $("#stayInTouchForm").submit(function(e)
   {
     var postData = $("#stayInTouchForm").serialize()
-    var formURL = "http://gststar.com/clonectGetInTouch";
+    var formURL = "http://gststar.com/getInTouch";
     $.ajax(
             {
               url : formURL,
