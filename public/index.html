@@ -175,11 +175,11 @@
           </div>
           <div class="col-sm-5 col-sm-offset-1 col-xs-12">
             <h2 class="mainHead text-center" id="formHead"><strong>Get in touch with us!</strong></h2>
-              <form>
-                <input type="text"  class="form-control" placeholder="Name" required><br>
-                <input type="email"  class="form-control" placeholder="Email" required><br>
-                <input type="tel"  class="form-control" placeholder="Phone Number" required><br>
-                <input type="text"  class="form-control" placeholder="Company Name"><br>
+              <form action="" method="post" name="stayInTouchForm" id="stayInTouchForm">
+                <input type="text"  name="name" class="form-control" placeholder="Name" required><br>
+                <input type="email" name="email"  class="form-control" placeholder="Email" required><br>
+                <input type="tel" name="ph"  class="form-control" placeholder="Phone Number" required><br>
+                <input type="text" name="companyType"  class="form-control" placeholder="Company Name"><br>
                 <select  class="form-control">
                   <option selected disabled value="">We are..</option>
                   <option value="CA & Tax Professionals">Enterprise</option>
@@ -187,7 +187,7 @@
                   <option value="Consulting Firms">Consulting Firm</option>
                   <option value="ERP Vendors">Software Vendor</option>
                 </select>
-                <center><button class="btn btn-lg ricagoBtn">Submit</button></center>
+                <center><button class="btn btn-lg ricagoBtn" type="submit">Submit</button></center>
               </form>
           </div>
         </div><!--container-->
@@ -298,4 +298,33 @@
       $(this).parent().removeClass('hover');
     })
   </script>
+<script>
+  $("#stayInTouchForm").submit(function(e)
+  {
+    var postData = $("#stayInTouchForm").serialize()
+    var formURL = "http://localhost:7009/clonectGetInTouch";
+    $.ajax(
+            {
+              url : formURL,
+              type: "POST",
+              data : postData,
+              success:function(data, textStatus, jqXHR)
+              {
+                //data: return data from server
+              },
+              error: function(jqXHR, textStatus, errorThrown)
+              {
+                //if fails     
+              }
+            });
+    e.preventDefault(); //STOP default action
+    e.unbind(); //unbind. to stop multiple form submit.
+  });
+
+
+
+
+
+
+</script>
 </html>
